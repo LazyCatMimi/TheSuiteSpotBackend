@@ -77,6 +77,9 @@ const client = new MongoClient(MONGODB_URI, {
     deprecationErrors: true,
   },
 });
+app.post("/", async (req, res) => {
+  res.send("meow")
+});
 
 async function connectToDatabase() {
     try {
