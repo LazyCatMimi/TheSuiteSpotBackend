@@ -63,8 +63,8 @@ import loginRoutes from "./routes/loginRoutes.js";
 import subscriptionRoutes from "./routes/subcriptionRoutes.js";
 import rentSuiteRoutes from "./routes/rentSuiteRoutes.js";
 
-const PORT = process.env.PORT;
-const MONGODB_URI = process.env.MONGODB_URI;
+const PORT = 3003;
+const MONGODB_URI = "mongodb+srv://TheSuiteSpot:fzWsgaMBW23ECnU3@atlascluster.1rybup4.mongodb.net/react_db?retryWrites=true&w=majority";
 
 const app = express();
 app.use(express.json());
