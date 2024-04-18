@@ -82,6 +82,9 @@ async function connectToDatabase() {
     try {
         await client.connect();
         console.log("Connected to MongoDB");
+        app.get("/", async (req, res) => {
+          res.send("connected")
+        });
         
         // // Define a database object for route handling
         // const database = client.db("TheSuiteSpot");
