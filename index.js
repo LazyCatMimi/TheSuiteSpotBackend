@@ -80,6 +80,9 @@ const client = new MongoClient(MONGODB_URI, {
 app.get("/", async (req, res) => {
   res.send("meow")
 });
+app.listen(PORT, ()=>{
+  console.log("listening")
+})
 
 async function connectToDatabase() {
     try {
