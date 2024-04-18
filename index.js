@@ -105,6 +105,9 @@ async function connectToDatabase() {
         // });
     } catch (error) {
         console.error("Failed to connect to MongoDB", error);
+        app.get("/", async (req, res) => {
+          res.send("not connected")
+        });
     }
 }
 
