@@ -84,20 +84,20 @@ async function connectToDatabase() {
           res.send("connected")
         });
         
-        // // Define a database object for route handling
-        // const database = client.db("TheSuiteSpot");
+        // Define a database object for route handling
+        const database = client.db("TheSuiteSpot");
 
-        // // Use the imported routes
-        // shopRoutes(app, database);
-        // providerRoutes(app, database);
-        // blogRoutes(app, database);
-        // userRoutes(app, client, database);
-        // loginRoutes(app, database);
-        // subscriptionRoutes(app, database);
-        // rentSuiteRoutes(app, database);
-        // accountRoutes(app, database);
+        // Use the imported routes
+        shopRoutes(app, database);
+        providerRoutes(app, database);
+        blogRoutes(app, database);
+        userRoutes(app, client, database);
+        loginRoutes(app, database);
+        subscriptionRoutes(app, database);
+        rentSuiteRoutes(app, database);
+        accountRoutes(app, database);
 
-        // // Start listening on the configured port
+        // Start listening on the configured port
         // app.listen(PORT, () => {
         //     console.log(`Server is running on port ${PORT}`);
         // });
