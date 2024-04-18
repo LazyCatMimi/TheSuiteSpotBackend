@@ -70,7 +70,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const client = new MongoClient(MONGODB_URI);
+const client = new MongoClient("mongodb+srv://TheSuiteSpot:fzWsgaMBW23ECnU3@atlascluster.1rybup4.mongodb.net/react_db?retryWrites=true&w=majority");
 app.get("/", async (req, res) => {
   res.send("meow")
 });
